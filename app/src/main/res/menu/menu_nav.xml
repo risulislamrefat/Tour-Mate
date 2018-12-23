@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:title="Profie"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:id="@+id/homeId"
+        />
+
+
+    <item
+        android:title="Nearby"
+
+        android:icon="@drawable/ic_near_me_black_24dp"
+        android:id="@+id/nearbyId"
+
+        />
+
+    <item
+        android:title="Events"
+        android:icon="@drawable/ic_event_black_24dp"
+        android:id="@+id/eventId"
+        />
+
+
+
+    <item
+        android:title="Weather"
+        android:icon="@drawable/ic_wb_sunny_black_24dp"
+        android:id="@+id/weatherId"
+        />
+    <item
+        android:title="Log out"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        android:id="@+id/memorableId"
+        />
+
+
+
+</menu>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBottom"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="52dp"
+
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create a New Event"
+        android:textSize="17dp"
+        android:layout_marginLeft="85dp"
+        android:textColor="@color/colorWhite"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearlayoutId">
+        <EditText
+            android:id="@+id/travelDestinationEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorWhite"
+            android:fontFamily="sans-serif-light"
+            android:hint="Travel Destination"
+            android:inputType="text"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/fromDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/travelDestinationEt"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorWhite"
+            android:fontFamily="sans-serif-light"
+            android:hint="Select Starting Date"
+
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/toDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fromDate"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorWhite"
+            android:fontFamily="sans-serif-light"
+            android:hint="Select Return Date"
+
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/budgetEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toDate"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorWhite"
+            android:fontFamily="sans-serif-light"
+            android:hint="Estimated Budget"
+            android:inputType="number"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/createBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_white"
+            android:text="Create"
+            android:textColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+</LinearLayout>
